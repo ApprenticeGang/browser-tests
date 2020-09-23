@@ -4,6 +4,8 @@ orbs:
   slack: circleci/slack@3.4.2
 jobs:
   slack-notifications:
+    docker:
+      - image: cimg/node:14.10.0
     steps:
       - slack/status
 workflows:
