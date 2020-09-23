@@ -20,5 +20,5 @@ workflows:
     jobs:
       - cypress/run
       - slack-notifications:
-        requires:
-          - cypress/run
+          requires:
+            - cypress/run
